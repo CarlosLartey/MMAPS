@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<style>
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-content p {
+  margin: 10px 0 20px;
+  font-size: 16px;
+}
+
+.card-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card-content a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-image {
+  filter: blur(10px);
+}
+
+</style>
+
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="card-container">
+        <div class="card">
+          <div class="card-background" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8am9iJTIwaGlyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+          <div class="card-content">
+            <h2>Services</h2>
+            <p>Check out our various offers</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-background" style="background-image: url('https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGpvYiUyMGhpcmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')"></div>
+          <div class="card-content">
+            <h2>Browse Jobs</h2>
+            <p>Find jobs that fit your expertise and reward you fairly</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-background" style="background-image: url('https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8am9iJTIwaGlyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+          <div class="card-content">
+            <h2>Find Talents</h2>
+            <p>Find the best from our large pool of professionals and freelancers.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-background" style="background-image: url('https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8am9iJTIwaGlyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+          <div class="card-content">
+            <h2>About</h2>
+            <p>Our values, Our mission and ways to reach us.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>      
+  </body>
+</html>
